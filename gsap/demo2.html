@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+  body{
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  #box1{
+    background-color: red;
+  }
+  #box2{
+    background-color: blue;
+    border-radius: 50%;
+  }
+  #box3{
+    background-color: rgb(255, 146, 164);
+  }
+
+  #box4 {
+    background-color: aquamarine;
+    border-radius: 20%;
+  }
+  #box5{
+    background-color: rgb(236, 127, 255);
+  }
+  #box6{
+    background-color: rgb(38, 203, 49);
+  }
+  #box7{
+    background-color: rgb(210, 169, 46);
+  }
+</style>
+<body>
+   
+   
+   <div id="box1" class="box">
+     ihuyh
+   </div>
+   <div id="box2" class="box">
+     
+   </div>
+   <div id="box3" class="box">
+     
+   </div>
+
+   <div id="box4" class="box">
+     
+    </div>
+   
+   <div id="box5" class="box">
+     
+    </div>
+   
+   <div id="box6" class="box">
+     
+    </div>
+   
+   <div id="box7" class="box">
+     
+    </div>
+   
+   
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script>
+
+    let anim = gsap.to(".box",{
+        x:function(){
+            return Math.floor(Math.random()*50)
+        },
+        x:500,
+        duration:3,
+        stagger: 0.1, // 自動運算位置
+        paused:true,
+
+
+
+
+    })
+  
+</script>
+
+</body>
+</html>
+

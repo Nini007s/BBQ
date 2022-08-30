@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+  body{
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  #box1{
+    background-color: red;
+  }
+  #box2{
+    background-color: blue;
+    border-radius: 50%;
+  }
+  #box3{
+    background-color: rgb(255, 146, 164);
+  }
+
+  #box4{
+    background-color: aquamarine;
+    border-radius: 20%;
+  }
+  
+</style>
+<body>
+   
+   
+   <div id="box1" class="box">
+     ihuyh
+   </div>
+   <div id="box2" class="box">
+     
+   </div>
+   <div id="box3" class="box">
+     
+   </div>
+
+   <div id="box4" class="box">
+     
+    </div>
+   
+   
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script>
+    // to=去 選擇器
+    gsap.to("#box1",{
+        // css屬性都可改
+        x:500,// x軸移動
+        y:300,// y軸移動
+        duration:3,// 動畫的時間
+        backgroundColor:"yellow",// 背景顏色漸變
+        color:"red",// 文字顏色漸變
+        width:200,// 寬度漸變
+        delay:3,// 延遲3秒動作
+        repeat:2,// 重複動作2次
+        yoyo:2,  // 動作來回2次
+        rotation:"-90deg", // 旋轉角度
+        transformOrigin:"100% 100%",
+        repeatDelay:0.2,// 動作重複時停頓0.2秒
+    })
+
+    gsap.to("#box2",{
+        ease: "bounce.out",// 球的動畫
+        y:300,
+        duration:1.5,
+    })
+    // from=從...過來
+    gsap.from("#box3",{
+        x:0,
+        duration:3,
+        opacity:0,
+
+    })
+
+    gsap.from("#box4",{
+        x:100,
+        duration:2,
+        opacity:0,
+
+    },{
+        x:500,
+        duration:2
+    })
+</script>
+
+</body>
+</html>
+
