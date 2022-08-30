@@ -33,15 +33,10 @@ function wheel(e){
   move_page(page_index);
  
 }
+
 function id(a){
     return document.getElementById(a)
   }
-
-
-
-  id("section_4").removeEventListener("scroll",section_4_animation);
-  id("section_4").addEventListener("scroll",section_4_animation);
-  
 //   偵聽
   id("number").addEventListener("click",function(event){
     console.log(event.target,"event.target")
